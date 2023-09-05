@@ -198,7 +198,7 @@ menu {
 /* HAEADER */
 
 .main-header {
-    background-color: #3161e0;
+    background-color: #255ee9;
     color: #FFF;
 }
 
@@ -273,6 +273,35 @@ img.logo {
 
 section {
     padding: 8rem 2rem;
+    position: relative;
+}
+
+section:nth-of-type(3),
+section:nth-of-type(4) {
+    padding: 4rem 0 15rem;
+}
+
+section:nth-of-type(5) {
+    padding-top: 4rem;
+}
+
+
+.gray::after,
+.white::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/wave-gray.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -100px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.white::after {
+    background-image: url(../img/wave-white.svg);
 }
 
 section .col-5 {
