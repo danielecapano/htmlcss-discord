@@ -21,6 +21,12 @@ img {
     max-width: 100%;
 }
 
+ul,
+ol,
+menu {
+    list-style: none;
+}
+
 .btn {
     border: none;
     outline: none;
@@ -201,6 +207,10 @@ navbar {
     padding-block: 20px;
 }
 
+img.logo {
+    max-width: 100px;
+}
+
 .menu {
     list-style: none;
     display: flex;
@@ -262,7 +272,7 @@ navbar {
 /* SECTIONS */
 
 section {
-    padding-block: 8rem;
+    padding: 8rem 2rem;
 }
 
 section .col-5 {
@@ -303,12 +313,74 @@ section .reverse .col-5 {
 
 /* FOOTER */
 
-footer {
-    padding-top: 30px;
-    border-top: 2px solid #7fffd4;
+.main-footer {
+    background-color: #23272a;
+    color: #FFF;
+    padding: 3rem 0;
 }
 
-.logo,
-.button {
-    padding: 10px;
+.high-footer {
+    padding: 0 0 1rem;
+
+}
+
+
+
+.title-footer {
+    font-size: 1.5rem;
+    color: #8ea1e1;
+    margin-bottom: 1.5rem;
+}
+
+.main-footer .col-4 {
+    padding-right: 5rem;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.language img {
+    max-height: 0.75rem;
+}
+
+.language i {
+    font-size: 0.5rem;
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+}
+
+.title-footer-list {
+    color: #8ea1e1;
+    font-weight: 700;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.separator {
+    height: 1px;
+    background-color: #8ea1e1;
+}
+
+.low-footer {
+    padding: 1rem 0 0;
+}
+
+.low-footer .row {
+    padding-top: 2rem;
+    border-top: 1px solid #8ea1e1;
 }
