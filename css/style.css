@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* LAYOUT */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.col-2 {
+    flex-basis: calc(100% / 6);
+}
+
+.col-3 {
+    flex-basis: calc(100% / 4);
+}
+
+
+.col-4 {
+    flex-basis: calc(100% / 3);
+}
+
+.col-5 {
+    flex-basis: calc((100% / 12) * 5);
+}
+
+
+.col-6 {
+    flex-basis: calc(100% / 2);
+}
+
+.col-7 {
+    flex-basis: calc((100% / 12) * 7);
+}
+
+
+.col-8 {
+    flex-basis: calc((100% / 12) * 8);
+}
+
+.col-10 {
+    flex-basis: calc((100% / 12) * 10);
+}
+
+
+
+.col-12 {
+    flex-basis: 100%;
+}
+
+/* DEBUG */
+
+.debug [class^="col-"] {
+    border: 2px dashed black;
+    min-height: 500px;
+    padding: 10px;
+}
+
+.debug navbar [class^="col-"] {
+    min-height: 0;
+}
+
+.debug navbar .col-8,
+.debug navbar .col-2 {
+    background-color: #daa520;
+    border-color: black;
+}
+
+.debug .col-4 {
+    background-color: #f08080;
+}
+
+.debug .col-5 {
+    background-color: #ffc0cb;
+}
+
+.debug .col-7 {
+    background-color: #1e90ff;
+}
+
+.debug .col-10 {
+    background-color: #ee82ee;
+    min-height: 400px;
+}
+
+.debug .col-12 {
+    background-color: #228b22;
+    min-height: 900px;
+}
+
+.debug .col-2 {
+    background-color: #20b2aa;
+    border-color: #FFF;
+}
+
+.debug .gray {
+    background-color: #d3d3d3;
+}
+
+.debug .brown {
+    background-color: #23272a;
+}
+
+.debug .hero {
+    background-color: #00008b;
+}
+
+.debug footer .row {
+    background-color: #7fffd4;
+    justify-content: space-between;
+    padding-block: 25px;
+}
+
+.debug .logo,
+.debug .button {
+    border: 2px dashed black;
+    background-color: #ffb6c1;
+}
+
+
+
+/* HAEADER */
+
+.main-header {
+    background-color: #add8e6;
+    padding-block: 15px;
+}
+
+navbar {
+    display: block;
+    background-color: #daa520;
+    /* height: 45px; */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.login {
+    text-align: right;
+}
+
+/* SECTIONS */
+
+section {
+    padding-block: 50px;
+}
+
+/* FOOTER */
+
+footer {
+    padding-top: 30px;
+    border-top: 2px solid #7fffd4;
+}
+
+.logo,
+.button {
+    padding: 10px;
+}
