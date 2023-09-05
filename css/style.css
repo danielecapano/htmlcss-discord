@@ -13,6 +13,7 @@ body {
 a {
     text-decoration: none;
     display: inline-block;
+    color: currentColor;
 }
 
 img {
@@ -21,9 +22,20 @@ img {
 }
 
 .btn {
+    border: none;
+    outline: none;
     border-radius: 50px;
     background: #FFF;
     color: black;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+
+}
+
+.purple {
+    background-color: #8ea1e1;
+    color: #FFF;
 }
 
 /* LAYOUT */
@@ -35,6 +47,11 @@ img {
 
 .container-sm {
     max-width: 800px;
+    margin: 0 auto;
+}
+
+.container-xsm {
+    max-width: 450px;
     margin: 0 auto;
 }
 
@@ -196,7 +213,7 @@ navbar {
     font-size: 14px;
 }
 
-.login {
+.small {
     font-size: 14px;
     padding: 0.5rem 1rem;
 }
@@ -234,7 +251,6 @@ navbar {
     justify-content: center;
     white-space: nowrap;
     gap: 0.5rem;
-    padding: 0.75rem 2rem;
 }
 
 .dark {
@@ -271,6 +287,18 @@ section .reverse .col-5 {
 
 .gray {
     background-color: #f6f6f6;
+}
+
+.download {
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 2rem;
+}
+
+.download h3 {
+    font-size: 1.375rem;
+    margin-bottom: 2rem;
 }
 
 /* FOOTER */
