@@ -43,6 +43,10 @@ img {
     justify-content: center;
 }
 
+.reverse {
+    flex-direction: row-reverse;
+}
+
 
 .space-between {
     justify-content: space-between;
@@ -237,9 +241,33 @@ navbar {
 
 /* SECTIONS */
 
-/* section {
-    padding-block: 50px;
-} */
+section {
+    padding-block: 8rem;
+}
+
+section .col-5 {
+    padding-inline: 6rem 2rem;
+
+}
+
+section .reverse .col-5 {
+    padding-inline: 2rem 6rem;
+
+}
+
+.section-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.section-text {
+    line-height: 1.6;
+}
+
+.gray {
+    background-color: #f6f6f6;
+}
 
 /* FOOTER */
 
